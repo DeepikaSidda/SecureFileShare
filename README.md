@@ -53,7 +53,9 @@ Secure File Share is a web application built with **React**, **AWS Cognito**, an
 git clone https://github.com/DeepikaSidda/SecureFileShare.git
 cd SecureFileShare/sharemyfile
 
-## 🚀 Install Dependencies
+
+
+## 2️⃣ Install Dependencies
 
 ```bash
 npm install

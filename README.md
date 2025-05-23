@@ -2,8 +2,7 @@
 
 Secure File Share is a web application built with **React**, **AWS Cognito**, and **Amazon S3** that enables authenticated users to upload files securely and share them using a secret key. Guest users can download shared files using a valid email and secret key.
 
-### 🌐 Live Demo
-[🔗 View Demo (if deployed)](https://your-app-link.com)
+
 
 ---
 

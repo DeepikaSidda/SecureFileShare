@@ -98,10 +98,11 @@ To allow users to sign in using their Google accounts, you need to set up Google
 1. Go to the [AWS Management Console](https://aws.amazon.com/console/).
 2. Open the **Cognito** service.
 3. Select your **User Pool**.
-4. Go to **Federation > Identity providers**.
-5. Select **Google**.
-6. Enter the Google **Client ID** and **Client Secret** obtained earlier.
-7. Save changes.
+4. In the left navigation, **go to Authentication**.
+5. Scroll to **Social identity providers** .
+6. Select **Google**.
+7. Enter the Google **Client ID** and **Client Secret** obtained earlier.
+8. Save changes.
 
 ### Step 3: Update App Configuration
 

@@ -74,6 +74,43 @@ VITE_S3_BUCKET=your_s3_bucket_name
 npm run dev
 ```
 Then open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Configuring Google as a Federated Identity Provider
+
+To allow users to sign in using their Google accounts, you need to set up Google as an identity provider in your AWS Cognito User Pool. Here’s how to do it:
+
+### Step 1: Create Google OAuth Client ID
+
+1. Go to the [Google Cloud Console](https://console.cloud.google.com/).
+2. Select or create a project.
+3. Navigate to **APIs & Services > Credentials**.
+4. Click **Create Credentials > OAuth client ID**.
+5. Select **Web application** as the application type.
+6. Under **Authorized JavaScript origins**, add your app domain (e.g., `http://localhost:5173` for local development).
+7. Under **Authorized redirect URIs**, add your Cognito redirect URI, usually in this format:
+`https://your-cognito-domain.auth.region.amazoncognito.com/oauth2/idpresponse`
+
+9. Click **Create**.
+10. Copy the **Client ID** (and **Client Secret** if needed).
+
+### Step 2: Configure Google as an Identity Provider in AWS Cognito
+
+1. Go to the [AWS Management Console](https://aws.amazon.com/console/).
+2. Open the **Cognito** service.
+3. Select your **User Pool**.
+4. Go to **Federation > Identity providers**.
+5. Select **Google**.
+6. Enter the Google **Client ID** and **Client Secret** obtained earlier.
+7. Save changes.
+
+### Step 3: Update App Configuration
+
+- Add the Google Client ID to your environment variables if your app requires it (depending on your implementation).
+
+---
+
+If you need help with any of these steps, feel free to ask!
+
 ## 🧠 Architecture Overview
 
 ### 🔐 AWS Cognito

@@ -68,7 +68,7 @@ VITE_COGNITO_IDENTITY_POOL_ID=your_identity_pool_id
 VITE_REGION=your_aws_region
 VITE_S3_BUCKET=your_s3_bucket_name
 ```
-### 4. Run the App Locally
+### 4. Run the App Locally 
 
 ```bash
 npm run dev

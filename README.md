@@ -21,7 +21,7 @@ Secure File Share is a web application built with **React**, **AWS Cognito**, an
 
 | Authenticated Upload | Guest Download |
 |----------------------|----------------|
-| ![Upload Screenshot](./images/owner.png) | ![Download Screenshot](./images/guest.png) |
+| ![Upload Screenshot](sharemyfile/images/owner.png) | ![Download Screenshot](./images/guest.png) |
 
 ---
 

@@ -14,7 +14,6 @@ Secure File Share is a web application built with **React**, **AWS Cognito**, an
   - Guests: Download only
 - 💬 Informative messages and upload feedback
 - 🛡️ Secure identity-based access via Cognito Identity Pools
-- 🌈 Responsive, colorful UI using custom CSS
 
 ---
 
@@ -115,3 +114,7 @@ Uploaded files are stored using the following format:
 ```scss
 base64(email) + secret + .extension
 ```
+## 🙋‍♀️ Author
+
+Built with 💙 by Deepika Sidda
+
